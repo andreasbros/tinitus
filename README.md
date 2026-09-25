@@ -17,6 +17,17 @@ flashes in step with the tone.
 - Opens a full-screen light room (tap the orb) that fills each half of the
   screen with bright colour following the left and right channels.
 - Remembers your settings and locked-in matches on the device.
+- Installs as a standalone web app (manifest, icons, service worker) and keeps
+  playing with the phone locked, with play, pause and ±10 Hz controls on the
+  lock screen through the Media Session API.
+
+## Install on iPhone
+
+Open the live URL in Safari, tap **Share**, then **Add to Home Screen**. The
+app opens full screen from its icon. Press play once inside the app; the tone
+then continues when you lock the phone or switch apps, and the lock screen
+shows Now Playing controls. A silent looping audio element keeps the iOS audio
+session alive, which is what allows Web Audio to run in the background.
 
 ## Run locally
 
